@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CCF29802478FB2600A38643 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF297F2478FB2600A38643 /* AppDelegate.swift */; };
+		9CCF29822478FB2600A38643 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF29812478FB2600A38643 /* SceneDelegate.swift */; };
+		9CCF29842478FB2600A38643 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF29832478FB2600A38643 /* ViewController.swift */; };
+		9CCF29872478FB2600A38643 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CCF29852478FB2600A38643 /* Main.storyboard */; };
+		9CCF29892478FB2900A38643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CCF29882478FB2900A38643 /* Assets.xcassets */; };
+		9CCF298C2478FB2900A38643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CCF298A2478FB2900A38643 /* LaunchScreen.storyboard */; };
+		9CCF29972478FB2900A38643 /* rouletteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF29962478FB2900A38643 /* rouletteTests.swift */; };
+		9CCF29A22478FB2900A38643 /* rouletteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF29A12478FB2900A38643 /* rouletteUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CCF29932478FB2900A38643 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CCF29742478FB2600A38643 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CCF297B2478FB2600A38643;
+			remoteInfo = roulette;
+		};
+		9CCF299E2478FB2900A38643 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CCF29742478FB2600A38643 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CCF297B2478FB2600A38643;
+			remoteInfo = roulette;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9CCF297C2478FB2600A38643 /* roulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roulette.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CCF297F2478FB2600A38643 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CCF29812478FB2600A38643 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9CCF29832478FB2600A38643 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CCF29862478FB2600A38643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CCF29882478FB2900A38643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CCF298B2478FB2900A38643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CCF298D2478FB2900A38643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CCF29922478FB2900A38643 /* rouletteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rouletteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CCF29962478FB2900A38643 /* rouletteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rouletteTests.swift; sourceTree = "<group>"; };
+		9CCF29982478FB2900A38643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CCF299D2478FB2900A38643 /* rouletteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rouletteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CCF29A12478FB2900A38643 /* rouletteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rouletteUITests.swift; sourceTree = "<group>"; };
+		9CCF29A32478FB2900A38643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CCF29792478FB2600A38643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CCF298F2478FB2900A38643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CCF299A2478FB2900A38643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CCF29732478FB2600A38643 = {
+			isa = PBXGroup;
+			children = (
+				9CCF297E2478FB2600A38643 /* roulette */,
+				9CCF29952478FB2900A38643 /* rouletteTests */,
+				9CCF29A02478FB2900A38643 /* rouletteUITests */,
+				9CCF297D2478FB2600A38643 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CCF297D2478FB2600A38643 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CCF297C2478FB2600A38643 /* roulette.app */,
+				9CCF29922478FB2900A38643 /* rouletteTests.xctest */,
+				9CCF299D2478FB2900A38643 /* rouletteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CCF297E2478FB2600A38643 /* roulette */ = {
+			isa = PBXGroup;
+			children = (
+				9CCF297F2478FB2600A38643 /* AppDelegate.swift */,
+				9CCF29812478FB2600A38643 /* SceneDelegate.swift */,
+				9CCF29832478FB2600A38643 /* ViewController.swift */,
+				9CCF29852478FB2600A38643 /* Main.storyboard */,
+				9CCF29882478FB2900A38643 /* Assets.xcassets */,
+				9CCF298A2478FB2900A38643 /* LaunchScreen.storyboard */,
+				9CCF298D2478FB2900A38643 /* Info.plist */,
+			);
+			path = roulette;
+			sourceTree = "<group>";
+		};
+		9CCF29952478FB2900A38643 /* rouletteTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CCF29962478FB2900A38643 /* rouletteTests.swift */,
+				9CCF29982478FB2900A38643 /* Info.plist */,
+			);
+			path = rouletteTests;
+			sourceTree = "<group>";
+		};
+		9CCF29A02478FB2900A38643 /* rouletteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9CCF29A12478FB2900A38643 /* rouletteUITests.swift */,
+				9CCF29A32478FB2900A38643 /* Info.plist */,
+			);
+			path = rouletteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CCF297B2478FB2600A38643 /* roulette */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CCF29A62478FB2900A38643 /* Build configuration list for PBXNativeTarget "roulette" */;
+			buildPhases = (
+				9CCF29782478FB2600A38643 /* Sources */,
+				9CCF29792478FB2600A38643 /* Frameworks */,
+				9CCF297A2478FB2600A38643 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = roulette;
+			productName = roulette;
+			productReference = 9CCF297C2478FB2600A38643 /* roulette.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CCF29912478FB2900A38643 /* rouletteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CCF29A92478FB2900A38643 /* Build configuration list for PBXNativeTarget "rouletteTests" */;
+			buildPhases = (
+				9CCF298E2478FB2900A38643 /* Sources */,
+				9CCF298F2478FB2900A38643 /* Frameworks */,
+				9CCF29902478FB2900A38643 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CCF29942478FB2900A38643 /* PBXTargetDependency */,
+			);
+			name = rouletteTests;
+			productName = rouletteTests;
+			productReference = 9CCF29922478FB2900A38643 /* rouletteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9CCF299C2478FB2900A38643 /* rouletteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CCF29AC2478FB2900A38643 /* Build configuration list for PBXNativeTarget "rouletteUITests" */;
+			buildPhases = (
+				9CCF29992478FB2900A38643 /* Sources */,
+				9CCF299A2478FB2900A38643 /* Frameworks */,
+				9CCF299B2478FB2900A38643 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CCF299F2478FB2900A38643 /* PBXTargetDependency */,
+			);
+			name = rouletteUITests;
+			productName = rouletteUITests;
+			productReference = 9CCF299D2478FB2900A38643 /* rouletteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CCF29742478FB2600A38643 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "松島優希";
+				TargetAttributes = {
+					9CCF297B2478FB2600A38643 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					9CCF29912478FB2900A38643 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 9CCF297B2478FB2600A38643;
+					};
+					9CCF299C2478FB2900A38643 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 9CCF297B2478FB2600A38643;
+					};
+				};
+			};
+			buildConfigurationList = 9CCF29772478FB2600A38643 /* Build configuration list for PBXProject "roulette" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CCF29732478FB2600A38643;
+			productRefGroup = 9CCF297D2478FB2600A38643 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CCF297B2478FB2600A38643 /* roulette */,
+				9CCF29912478FB2900A38643 /* rouletteTests */,
+				9CCF299C2478FB2900A38643 /* rouletteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CCF297A2478FB2600A38643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CCF298C2478FB2900A38643 /* LaunchScreen.storyboard in Resources */,
+				9CCF29892478FB2900A38643 /* Assets.xcassets in Resources */,
+				9CCF29872478FB2600A38643 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CCF29902478FB2900A38643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CCF299B2478FB2900A38643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CCF29782478FB2600A38643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CCF29842478FB2600A38643 /* ViewController.swift in Sources */,
+				9CCF29802478FB2600A38643 /* AppDelegate.swift in Sources */,
+				9CCF29822478FB2600A38643 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CCF298E2478FB2900A38643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CCF29972478FB2900A38643 /* rouletteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CCF29992478FB2900A38643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CCF29A22478FB2900A38643 /* rouletteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CCF29942478FB2900A38643 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CCF297B2478FB2600A38643 /* roulette */;
+			targetProxy = 9CCF29932478FB2900A38643 /* PBXContainerItemProxy */;
+		};
+		9CCF299F2478FB2900A38643 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CCF297B2478FB2600A38643 /* roulette */;
+			targetProxy = 9CCF299E2478FB2900A38643 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CCF29852478FB2600A38643 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CCF29862478FB2600A38643 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CCF298A2478FB2900A38643 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CCF298B2478FB2900A38643 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CCF29A42478FB2900A38643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CCF29A52478FB2900A38643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CCF29A72478FB2900A38643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DC67NVFSC;
+				INFOPLIST_FILE = roulette/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.matsushima.mukku.roulette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CCF29A82478FB2900A38643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DC67NVFSC;
+				INFOPLIST_FILE = roulette/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.matsushima.mukku.roulette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9CCF29AA2478FB2900A38643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DC67NVFSC;
+				INFOPLIST_FILE = rouletteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.matsushima.mukku.rouletteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/roulette.app/roulette";
+			};
+			name = Debug;
+		};
+		9CCF29AB2478FB2900A38643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DC67NVFSC;
+				INFOPLIST_FILE = rouletteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.matsushima.mukku.rouletteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/roulette.app/roulette";
+			};
+			name = Release;
+		};
+		9CCF29AD2478FB2900A38643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DC67NVFSC;
+				INFOPLIST_FILE = rouletteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.matsushima.mukku.rouletteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = roulette;
+			};
+			name = Debug;
+		};
+		9CCF29AE2478FB2900A38643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DC67NVFSC;
+				INFOPLIST_FILE = rouletteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.matsushima.mukku.rouletteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = roulette;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CCF29772478FB2600A38643 /* Build configuration list for PBXProject "roulette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CCF29A42478FB2900A38643 /* Debug */,
+				9CCF29A52478FB2900A38643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CCF29A62478FB2900A38643 /* Build configuration list for PBXNativeTarget "roulette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CCF29A72478FB2900A38643 /* Debug */,
+				9CCF29A82478FB2900A38643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CCF29A92478FB2900A38643 /* Build configuration list for PBXNativeTarget "rouletteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CCF29AA2478FB2900A38643 /* Debug */,
+				9CCF29AB2478FB2900A38643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CCF29AC2478FB2900A38643 /* Build configuration list for PBXNativeTarget "rouletteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CCF29AD2478FB2900A38643 /* Debug */,
+				9CCF29AE2478FB2900A38643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CCF29742478FB2600A38643 /* Project object */;
+}
