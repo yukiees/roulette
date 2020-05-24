@@ -15,31 +15,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="題名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkO-oy-vBa">
-                                <rect key="frame" x="75" y="78" width="265" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
-                                <color key="textColor" red="0.30107792729999999" green="0.78729949870000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EuR-KH-nRa">
+                                <rect key="frame" x="50" y="204" width="314" height="310"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm6-DO-x4W">
+                                <rect key="frame" x="52" y="592" width="310" height="73"/>
+                                <color key="backgroundColor" red="0.42149623124109586" green="0.089807866598630104" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="52"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjY-9y-RK1">
+                                <rect key="frame" x="120" y="720" width="174" height="45"/>
+                                <color key="backgroundColor" red="0.42149623120000002" green="0.089807866599999994" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="お題を選ぶ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gQG-HY-i17" kind="presentation" modalPresentationStyle="fullScreen" id="tAB-49-FRP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roulette" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkO-oy-vBa">
+                                <rect key="frame" x="0.0" y="69" width="414" height="128.5"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EuR-KH-nRa">
-                                <rect key="frame" x="54" y="197" width="307" height="297"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm6-DO-x4W">
-                                <rect key="frame" x="65" y="571" width="284" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <state key="normal" title="START/STOP"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjY-9y-RK1">
-                                <rect key="frame" x="65" y="696" width="284" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <state key="normal" title="お題を選ぶ"/>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.45098039215686275" green="0.30588235294117649" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.28092893835616439" green="1" blue="0.19210188356164384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GjY-9y-RK1" secondAttribute="trailing" constant="120" id="2Af-VC-dnX"/>
+                            <constraint firstItem="EuR-KH-nRa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="5EH-x9-Br9"/>
+                            <constraint firstItem="GjY-9y-RK1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="CQH-uj-xIc"/>
+                            <constraint firstItem="vkO-oy-vBa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GFv-RQ-grA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EuR-KH-nRa" secondAttribute="trailing" constant="50" id="IC2-YF-DdV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mm6-DO-x4W" secondAttribute="trailing" constant="52" id="LqG-fy-lYA"/>
+                            <constraint firstItem="vkO-oy-vBa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SAi-ay-vw7"/>
+                            <constraint firstItem="Mm6-DO-x4W" firstAttribute="top" secondItem="EuR-KH-nRa" secondAttribute="bottom" constant="78" id="V8W-qF-bwa"/>
+                            <constraint firstItem="GjY-9y-RK1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WAu-Je-WEG"/>
+                            <constraint firstItem="GjY-9y-RK1" firstAttribute="top" secondItem="Mm6-DO-x4W" secondAttribute="bottom" constant="55" id="aAr-NB-0ZS"/>
+                            <constraint firstItem="Mm6-DO-x4W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="abU-Er-13f"/>
+                            <constraint firstItem="vkO-oy-vBa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="bwc-Om-CpN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GjY-9y-RK1" secondAttribute="bottom" constant="97" id="d6U-Uf-g2o"/>
+                            <constraint firstItem="EuR-KH-nRa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="hF3-th-19r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vkO-oy-vBa" secondAttribute="trailing" id="tI2-pR-Rdo"/>
+                            <constraint firstItem="EuR-KH-nRa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vyE-Tx-d6o"/>
+                            <constraint firstItem="Mm6-DO-x4W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yjq-eE-jsX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -87,7 +112,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="1" green="0.79780230157131349" blue="0.79228602185737307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Kmw-Hh-TfL"/>
                     </view>
                 </viewController>
@@ -163,7 +188,7 @@
                                 <state key="normal" title="項目を増やす！"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="1" green="0.79464896855753431" blue="0.79053403253424659" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Gug-RY-Ta2"/>
                     </view>
                 </viewController>
