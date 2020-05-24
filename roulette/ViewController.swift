@@ -18,7 +18,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        rouletteButton.layer.cornerRadius = 10
+        rouletteButton.layer.cornerRadius = 20
+        selectList.layer.cornerRadius = 20
         
     
     }

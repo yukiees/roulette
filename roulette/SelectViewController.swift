@@ -9,11 +9,14 @@
 import UIKit
 
 class SelectViewController: UIViewController {
-
+    @IBOutlet weak var makeListButton: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        makeListButton.layer.cornerRadius = 10
 
-        // Do any additional setup after loading the view.
+       
     }
     
 
