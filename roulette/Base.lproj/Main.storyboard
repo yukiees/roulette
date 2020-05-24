@@ -34,7 +34,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gQG-HY-i17" kind="presentation" modalPresentationStyle="fullScreen" id="tAB-49-FRP"/>
+                                    <segue destination="gQG-HY-i17" kind="presentation" identifier="select" modalPresentationStyle="fullScreen" id="tAB-49-FRP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roulette" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkO-oy-vBa">
@@ -67,15 +67,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="rouletteButton" destination="Mm6-DO-x4W" id="HNx-CQ-Hyx"/>
+                        <outlet property="rouletteView" destination="EuR-KH-nRa" id="VVU-CW-4u7"/>
+                        <outlet property="selectList" destination="GjY-9y-RK1" id="RcY-9t-5PO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-123.18840579710145" y="126.5625"/>
         </scene>
-        <!--View Controller-->
+        <!--Select View Controller-->
         <scene sceneID="ouk-nh-4fE">
             <objects>
-                <viewController id="gQG-HY-i17" sceneMemberID="viewController">
+                <viewController id="gQG-HY-i17" customClass="SelectViewController" customModule="roulette" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="shA-3M-U9l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,7 +106,7 @@
                                     <color key="titleColor" red="0.30107792729999999" green="0.78729949870000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="v6F-Yx-ww6" kind="presentation" modalPresentationStyle="fullScreen" id="x0E-0y-uQd"/>
+                                    <segue destination="v6F-Yx-ww6" kind="presentation" identifier="make" modalPresentationStyle="fullScreen" id="x0E-0y-uQd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -119,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="621.73913043478262" y="126.5625"/>
         </scene>
-        <!--View Controller-->
+        <!--List View Controller-->
         <scene sceneID="8jH-rq-LHH">
             <objects>
-                <viewController id="v6F-Yx-ww6" sceneMemberID="viewController">
+                <viewController id="v6F-Yx-ww6" customClass="ListViewController" customModule="roulette" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d01-ar-V7p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

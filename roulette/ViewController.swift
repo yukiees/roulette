@@ -9,10 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var rouletteView: UIImageView!
+    @IBOutlet weak var rouletteButton: UIButton!
+    @IBOutlet weak var selectList: UIButton!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        rouletteButton.layer.cornerRadius = 10
+        
+    
     }
 
 
