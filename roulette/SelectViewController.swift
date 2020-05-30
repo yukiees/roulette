@@ -9,25 +9,40 @@
 import UIKit
 
 class SelectViewController: UIViewController {
+    
+    var listedData: [String] = []
+    
+    @IBOutlet weak var templete: UILabel!
     @IBOutlet weak var makeListButton: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var list1Button: UIButton!
+    @IBOutlet weak var list2Button: UIButton!
+    @IBOutlet weak var list3Button: UIButton!
+    @IBOutlet weak var list4Button: UIButton!
+    @IBOutlet weak var list5Button: UIButton!
+    @IBOutlet weak var list6Button: UIButton!
+    @IBOutlet weak var list7Button: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         makeListButton.layer.cornerRadius = 10
-
-       
+        list1Button.layer.cornerRadius = 10
+        list2Button.layer.cornerRadius = 10
+        list3Button.layer.cornerRadius = 10
+        list4Button.layer.cornerRadius = 10
+        list5Button.layer.cornerRadius = 10
+        list6Button.layer.cornerRadius = 10
+        list7Button.layer.cornerRadius = 10
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func onTapped1Button(){
+        listedData.append(contentsOf: ["カレー","シチュー","うどん"] )
+        
     }
-    */
+
+
 
 }
