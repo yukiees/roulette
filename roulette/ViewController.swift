@@ -23,11 +23,13 @@ class ViewController: UIViewController {
         rouletteButton.layer.cornerRadius = 10
         rouletteSetButton.layer.cornerRadius = 10
         selectList.layer.cornerRadius = 10
+        rouletteView.layer.cornerRadius = 150
     
     }
 
     @IBAction func onTappedStartButton(){
         if (listData != []){
+            roulette()
             //ルーレット回転の命令
         }else{
             let alert = UIAlertController(
@@ -50,5 +52,15 @@ class ViewController: UIViewController {
         }
     }
     
+     func roulette() {
+        
+        UIView.animate(withDuration: 5, animations: {
+            for _ in 0...5 {
+            self.rouletteView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*180)
+            self.rouletteView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*360)
+            
+            }
+    })
+    }
 }
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C2577DE247A4ABF00572782 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2577DD247A4ABF00572782 /* SelectViewController.swift */; };
 		9C2577E0247A4B1900572782 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2577DF247A4B1900572782 /* ListViewController.swift */; };
+		9C46D0FA2483E06F00094FEB /* named.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C46D0F92483E06E00094FEB /* named.png */; };
 		9CCF29802478FB2600A38643 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF297F2478FB2600A38643 /* AppDelegate.swift */; };
 		9CCF29822478FB2600A38643 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF29812478FB2600A38643 /* SceneDelegate.swift */; };
 		9CCF29842478FB2600A38643 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF29832478FB2600A38643 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		9C2577DD247A4ABF00572782 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		9C2577DF247A4B1900572782 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		9C46D0F92483E06E00094FEB /* named.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = named.png; sourceTree = "<group>"; };
 		9CCF297C2478FB2600A38643 /* roulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roulette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCF297F2478FB2600A38643 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CCF29812478FB2600A38643 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				9CCF29812478FB2600A38643 /* SceneDelegate.swift */,
 				9CCF29832478FB2600A38643 /* ViewController.swift */,
 				9C2577DD247A4ABF00572782 /* SelectViewController.swift */,
+				9C46D0F92483E06E00094FEB /* named.png */,
 				9CCF29852478FB2600A38643 /* Main.storyboard */,
 				9C2577DF247A4B1900572782 /* ListViewController.swift */,
 				9CCF29882478FB2900A38643 /* Assets.xcassets */,
@@ -240,6 +243,7 @@
 			files = (
 				9CCF298C2478FB2900A38643 /* LaunchScreen.storyboard in Resources */,
 				9CCF29892478FB2900A38643 /* Assets.xcassets in Resources */,
+				9C46D0FA2483E06F00094FEB /* named.png in Resources */,
 				9CCF29872478FB2600A38643 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
