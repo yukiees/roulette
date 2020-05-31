@@ -106,9 +106,9 @@
 				9CCF297F2478FB2600A38643 /* AppDelegate.swift */,
 				9CCF29812478FB2600A38643 /* SceneDelegate.swift */,
 				9CCF29832478FB2600A38643 /* ViewController.swift */,
+				9C2577DD247A4ABF00572782 /* SelectViewController.swift */,
 				9CCF29852478FB2600A38643 /* Main.storyboard */,
 				9C2577DF247A4B1900572782 /* ListViewController.swift */,
-				9C2577DD247A4ABF00572782 /* SelectViewController.swift */,
 				9CCF29882478FB2900A38643 /* Assets.xcassets */,
 				9CCF298A2478FB2900A38643 /* LaunchScreen.storyboard */,
 				9CCF298D2478FB2900A38643 /* Info.plist */,
@@ -445,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DC67NVFSC;
 				INFOPLIST_FILE = roulette/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,6 +464,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DC67NVFSC;
 				INFOPLIST_FILE = roulette/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

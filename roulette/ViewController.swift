@@ -8,25 +8,26 @@
 
 import UIKit
 
+var listData: [String] = []
+
 class ViewController: UIViewController {
+    @IBOutlet weak var test1: UILabel!
     @IBOutlet weak var rouletteView: UIImageView!
     @IBOutlet weak var rouletteButton: UIButton!
     @IBOutlet weak var selectList: UIButton!
+    @IBOutlet weak var rouletteSetButton: UIButton!
     
-    var listdatas: [String] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         rouletteButton.layer.cornerRadius = 10
-        selectList.layer.cornerRadius = 15
-        
+        rouletteSetButton.layer.cornerRadius = 10
+        selectList.layer.cornerRadius = 10
+    
     }
 
-
     @IBAction func onTappedStartButton(){
-        let listData = UserDefaults.standard
-        if (listData.array(forKey: "WORD") != nil){
+        if (listData != []){
             //ルーレット回転の命令
         }else{
             let alert = UIAlertController(
@@ -41,7 +42,13 @@ class ViewController: UIViewController {
             ))
          self.present (alert, animated: true, completion: nil)
         }
-        
     }
+    
+    @IBAction func onTappedSetButton(){
+        if (listData != []){
+            test1.text = listData[1]
+        }
+    }
+    
 }
 

@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="roulette" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="View1" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="roulette" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjY-9y-RK1">
-                                <rect key="frame" x="120" y="720" width="174" height="45"/>
+                                <rect key="frame" x="120" y="787" width="174" height="45"/>
                                 <color key="backgroundColor" red="0.42149623120000002" green="0.089807866599999994" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="お題を選ぶ">
@@ -48,23 +48,46 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icX-P6-5n2">
+                                <rect key="frame" x="309" y="168" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDL-KC-MpW">
+                                <rect key="frame" x="50" y="687" width="314" height="71"/>
+                                <color key="backgroundColor" red="0.42149623120000002" green="0.089807866599999994" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="51"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="9" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="SET">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTappedSetButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="N7I-hJ-mgY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.45098039215686275" green="0.30588235294117649" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.28092893835616439" green="1" blue="0.19210188356164384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GjY-9y-RK1" secondAttribute="trailing" constant="120" id="2Af-VC-dnX"/>
                             <constraint firstItem="EuR-KH-nRa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="5EH-x9-Br9"/>
+                            <constraint firstItem="eDL-KC-MpW" firstAttribute="top" secondItem="Mm6-DO-x4W" secondAttribute="bottom" constant="30" id="8sa-sk-XmX"/>
+                            <constraint firstItem="GjY-9y-RK1" firstAttribute="top" secondItem="eDL-KC-MpW" secondAttribute="bottom" constant="23" id="8wY-NQ-MGe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eDL-KC-MpW" secondAttribute="trailing" constant="50" id="B9a-SL-74V"/>
                             <constraint firstItem="GjY-9y-RK1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="CQH-uj-xIc"/>
                             <constraint firstItem="vkO-oy-vBa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GFv-RQ-grA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EuR-KH-nRa" secondAttribute="trailing" constant="50" id="IC2-YF-DdV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mm6-DO-x4W" secondAttribute="trailing" constant="52" id="LqG-fy-lYA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GjY-9y-RK1" secondAttribute="bottom" constant="30" id="MOj-JQ-vE7"/>
                             <constraint firstItem="vkO-oy-vBa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SAi-ay-vw7"/>
                             <constraint firstItem="Mm6-DO-x4W" firstAttribute="top" secondItem="EuR-KH-nRa" secondAttribute="bottom" constant="78" id="V8W-qF-bwa"/>
+                            <constraint firstItem="eDL-KC-MpW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="VQp-Jf-plR"/>
                             <constraint firstItem="GjY-9y-RK1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WAu-Je-WEG"/>
-                            <constraint firstItem="GjY-9y-RK1" firstAttribute="top" secondItem="Mm6-DO-x4W" secondAttribute="bottom" constant="55" id="aAr-NB-0ZS"/>
                             <constraint firstItem="Mm6-DO-x4W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="abU-Er-13f"/>
                             <constraint firstItem="vkO-oy-vBa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="bwc-Om-CpN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GjY-9y-RK1" secondAttribute="bottom" constant="97" id="d6U-Uf-g2o"/>
+                            <constraint firstItem="eDL-KC-MpW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fwW-en-E5v"/>
                             <constraint firstItem="EuR-KH-nRa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="hF3-th-19r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vkO-oy-vBa" secondAttribute="trailing" id="tI2-pR-Rdo"/>
                             <constraint firstItem="EuR-KH-nRa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vyE-Tx-d6o"/>
@@ -74,8 +97,10 @@
                     </view>
                     <connections>
                         <outlet property="rouletteButton" destination="Mm6-DO-x4W" id="HNx-CQ-Hyx"/>
+                        <outlet property="rouletteSetButton" destination="eDL-KC-MpW" id="ZnH-i9-mY4"/>
                         <outlet property="rouletteView" destination="EuR-KH-nRa" id="VVU-CW-4u7"/>
                         <outlet property="selectList" destination="GjY-9y-RK1" id="RcY-9t-5PO"/>
+                        <outlet property="test1" destination="icX-P6-5n2" id="2hi-R9-cUa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -259,7 +284,6 @@
                         <outlet property="list7Button" destination="yNe-Aq-jDP" id="TNQ-GM-2r0"/>
                         <outlet property="makeListButton" destination="yJQ-v0-cdJ" id="9Dv-aS-CAz"/>
                         <outlet property="scrollView" destination="ZAL-Cd-Pr6" id="1dV-lA-gwi"/>
-                        <outlet property="templete" destination="NI2-YH-Sbx" id="YtW-12-ROh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xO1-wk-BQ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

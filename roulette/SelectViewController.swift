@@ -12,7 +12,7 @@ class SelectViewController: UIViewController {
     
     var listedData: [String] = []
     
-    @IBOutlet weak var templete: UILabel!
+    
     @IBOutlet weak var makeListButton: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var list1Button: UIButton!
@@ -34,13 +34,15 @@ class SelectViewController: UIViewController {
         list5Button.layer.cornerRadius = 10
         list6Button.layer.cornerRadius = 10
         list7Button.layer.cornerRadius = 10
-        
-        
     }
     
+    
+    
     @IBAction func onTapped1Button(){
+       let preview = self.storyboard?.instantiateViewController(withIdentifier: "View1") as! ViewController
+       self.present(preview, animated: true, completion: nil)
         listedData.append(contentsOf: ["カレー","シチュー","うどん"] )
-        
+        listData = listedData
     }
 
 
