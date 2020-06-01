@@ -18,6 +18,8 @@
 		9CCF298C2478FB2900A38643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CCF298A2478FB2900A38643 /* LaunchScreen.storyboard */; };
 		9CCF29972478FB2900A38643 /* rouletteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF29962478FB2900A38643 /* rouletteTests.swift */; };
 		9CCF29A22478FB2900A38643 /* rouletteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCF29A12478FB2900A38643 /* rouletteUITests.swift */; };
+		9CDBE4EF2485528F00316E64 /* naming.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBE4EE2485528F00316E64 /* naming.png */; };
+		9CDBE4F12485550F00316E64 /* rouletteimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBE4F02485550F00316E64 /* rouletteimage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		9CCF299D2478FB2900A38643 /* rouletteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rouletteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCF29A12478FB2900A38643 /* rouletteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rouletteUITests.swift; sourceTree = "<group>"; };
 		9CCF29A32478FB2900A38643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CDBE4EE2485528F00316E64 /* naming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naming.png; sourceTree = "<group>"; };
+		9CDBE4F02485550F00316E64 /* rouletteimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rouletteimage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				9CCF29832478FB2600A38643 /* ViewController.swift */,
 				9C2577DD247A4ABF00572782 /* SelectViewController.swift */,
 				9C46D0F92483E06E00094FEB /* named.png */,
+				9CDBE4F02485550F00316E64 /* rouletteimage.png */,
+				9CDBE4EE2485528F00316E64 /* naming.png */,
 				9CCF29852478FB2600A38643 /* Main.storyboard */,
 				9C2577DF247A4B1900572782 /* ListViewController.swift */,
 				9CCF29882478FB2900A38643 /* Assets.xcassets */,
@@ -242,6 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CCF298C2478FB2900A38643 /* LaunchScreen.storyboard in Resources */,
+				9CDBE4F12485550F00316E64 /* rouletteimage.png in Resources */,
+				9CDBE4EF2485528F00316E64 /* naming.png in Resources */,
 				9CCF29892478FB2900A38643 /* Assets.xcassets in Resources */,
 				9C46D0FA2483E06F00094FEB /* named.png in Resources */,
 				9CCF29872478FB2600A38643 /* Main.storyboard in Resources */,

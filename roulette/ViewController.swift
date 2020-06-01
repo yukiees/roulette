@@ -12,6 +12,7 @@ var listData: [String] = []
 
 class ViewController: UIViewController {
     @IBOutlet weak var test1: UILabel!
+    @IBOutlet weak var test2: UILabel!
     @IBOutlet weak var rouletteView: UIImageView!
     @IBOutlet weak var rouletteButton: UIButton!
     @IBOutlet weak var selectList: UIButton!
@@ -50,6 +51,7 @@ class ViewController: UIViewController {
     @IBAction func onTappedSetButton(){
         if (listData != []){
             test1.text = listData[1]
+            test2.text = listData[2]
         }
     }
     
@@ -61,7 +63,11 @@ class ViewController: UIViewController {
             for _ in 0...5 {
             self.rouletteView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*180)
             self.rouletteView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*360)
-                self.rouletteView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*CGFloat(number))
+            self.rouletteView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*CGFloat(number))
+            
+                self.test1.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*180)
+                self.test1.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*360)
+                self.test1.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*CGFloat(number))
             }
     })
     }
