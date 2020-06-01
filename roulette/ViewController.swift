@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var rouletteSetButton: UIButton!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         rouletteButton.layer.cornerRadius = 10
@@ -54,11 +55,13 @@ class ViewController: UIViewController {
     
      func roulette() {
         
+        let number = Int.random(in: 0..<360)
+        
         UIView.animate(withDuration: 5, animations: {
             for _ in 0...5 {
             self.rouletteView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*180)
             self.rouletteView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*360)
-            
+                self.rouletteView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*CGFloat(number))
             }
     })
     }
