@@ -13,8 +13,6 @@ class ListViewController: UIViewController {
     @IBOutlet weak var maxCount: UILabel!
     @IBOutlet weak var ListTitle: UITextField!
     @IBOutlet weak var ListElements: UITextField!
-    @IBOutlet weak var LimitCount: UILabel!
-    @IBOutlet weak var addListButton: UIButton!
     @IBOutlet weak var toRouletteButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
