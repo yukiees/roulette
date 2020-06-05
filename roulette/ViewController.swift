@@ -13,6 +13,12 @@ var listData: [String] = []
 class ViewController: UIViewController {
     @IBOutlet weak var test1: UILabel!
     @IBOutlet weak var test2: UILabel!
+    @IBOutlet weak var test3: UILabel!
+    @IBOutlet weak var test4: UILabel!
+    @IBOutlet weak var test5: UILabel!
+    @IBOutlet weak var test6: UILabel!
+    @IBOutlet weak var test7: UILabel!
+    @IBOutlet weak var test8: UILabel!
     @IBOutlet weak var rouletteView: UIImageView!
     @IBOutlet weak var rouletteButton: UIButton!
     @IBOutlet weak var selectList: UIButton!
@@ -50,8 +56,15 @@ class ViewController: UIViewController {
     
     @IBAction func onTappedSetButton(){
         if (listData != []){
-            test1.text = listData[1]
-            test2.text = listData[2]
+            test1.text = listData[0]
+            test2.text = listData[1]
+            test3.text = listData[2]
+            test4.text = listData[3]
+            test5.text = listData[4]
+            test6.text = listData[5]
+            test7.text = listData[6]
+            test8.text = listData[7]
+            
         }
     }
     

@@ -36,11 +36,13 @@ class SelectViewController: UIViewController {
         list7Button.layer.cornerRadius = 10
     }
     
-    
+    func toRouletteDisplay(){
+        let preview = self.storyboard?.instantiateViewController(withIdentifier: "View1") as! ViewController
+        self.present(preview, animated: true, completion: nil)
+    }
     
     @IBAction func onTapped1Button(){
-       let preview = self.storyboard?.instantiateViewController(withIdentifier: "View1") as! ViewController
-       self.present(preview, animated: true, completion: nil)
+        toRouletteDisplay()
         listedData.append(contentsOf: ["カレー","シチュー","うどん"] )
         listData = listedData
     }
