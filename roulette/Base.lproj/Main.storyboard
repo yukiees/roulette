@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="eightItems" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EuR-KH-nRa">
-                                <rect key="frame" x="50" y="204" width="314" height="308"/>
+                                <rect key="frame" x="50" y="204" width="314" height="314"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm6-DO-x4W">
-                                <rect key="frame" x="52" y="590" width="310" height="75"/>
+                                <rect key="frame" x="52" y="676" width="310" height="75"/>
                                 <color key="backgroundColor" red="0.42149623124109586" green="0.089807866598630104" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="52"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="14" maxX="0.0" maxY="0.0"/>
@@ -48,18 +48,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDL-KC-MpW">
-                                <rect key="frame" x="50" y="695" width="314" height="69"/>
-                                <color key="backgroundColor" red="0.42149623120000002" green="0.089807866599999994" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="51"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="9" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="SET">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="onTappedSetButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="N7I-hJ-mgY"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poiter" translatesAutoresizingMaskIntoConstraints="NO" id="1Gv-JF-pfu">
                                 <rect key="frame" x="186" y="168" width="42" height="36"/>
                                 <constraints>
@@ -73,9 +61,7 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GjY-9y-RK1" secondAttribute="trailing" constant="120" id="2Af-VC-dnX"/>
                             <constraint firstItem="EuR-KH-nRa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="5EH-x9-Br9"/>
-                            <constraint firstItem="eDL-KC-MpW" firstAttribute="top" secondItem="Mm6-DO-x4W" secondAttribute="bottom" constant="30" id="8sa-sk-XmX"/>
-                            <constraint firstItem="GjY-9y-RK1" firstAttribute="top" secondItem="eDL-KC-MpW" secondAttribute="bottom" constant="23" id="8wY-NQ-MGe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eDL-KC-MpW" secondAttribute="trailing" constant="50" id="B9a-SL-74V"/>
+                            <constraint firstItem="GjY-9y-RK1" firstAttribute="top" secondItem="Mm6-DO-x4W" secondAttribute="bottom" constant="36" id="BW1-b8-kXO"/>
                             <constraint firstItem="GjY-9y-RK1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="CQH-uj-xIc"/>
                             <constraint firstItem="vkO-oy-vBa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GFv-RQ-grA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EuR-KH-nRa" secondAttribute="trailing" constant="50" id="IC2-YF-DdV"/>
@@ -83,14 +69,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GjY-9y-RK1" secondAttribute="bottom" constant="30" id="MOj-JQ-vE7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Gv-JF-pfu" secondAttribute="trailing" constant="186" id="RtS-Ka-SPZ"/>
                             <constraint firstItem="vkO-oy-vBa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SAi-ay-vw7"/>
-                            <constraint firstItem="Mm6-DO-x4W" firstAttribute="top" secondItem="EuR-KH-nRa" secondAttribute="bottom" constant="78" id="V8W-qF-bwa"/>
                             <constraint firstItem="1Gv-JF-pfu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="186" id="VMm-C9-7mL"/>
-                            <constraint firstItem="eDL-KC-MpW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="VQp-Jf-plR"/>
                             <constraint firstItem="GjY-9y-RK1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WAu-Je-WEG"/>
                             <constraint firstItem="1Gv-JF-pfu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YTZ-6p-Yuv"/>
                             <constraint firstItem="Mm6-DO-x4W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="abU-Er-13f"/>
                             <constraint firstItem="vkO-oy-vBa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="bwc-Om-CpN"/>
-                            <constraint firstItem="eDL-KC-MpW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fwW-en-E5v"/>
+                            <constraint firstItem="Mm6-DO-x4W" firstAttribute="top" secondItem="EuR-KH-nRa" secondAttribute="bottom" constant="158" id="h4A-hS-aVZ"/>
                             <constraint firstItem="EuR-KH-nRa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="hF3-th-19r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vkO-oy-vBa" secondAttribute="trailing" id="tI2-pR-Rdo"/>
                             <constraint firstItem="1Gv-JF-pfu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="124" id="vdH-Sk-T4e"/>
@@ -101,7 +85,6 @@
                     </view>
                     <connections>
                         <outlet property="rouletteButton" destination="Mm6-DO-x4W" id="HNx-CQ-Hyx"/>
-                        <outlet property="rouletteSetButton" destination="eDL-KC-MpW" id="ZnH-i9-mY4"/>
                         <outlet property="rouletteView" destination="EuR-KH-nRa" id="VVU-CW-4u7"/>
                         <outlet property="selectList" destination="GjY-9y-RK1" id="RcY-9t-5PO"/>
                     </connections>
