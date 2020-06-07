@@ -8,12 +8,23 @@
 
 import UIKit
 
-var listData: [String] = []
+var listData: [String?] = []
 
 class ViewController: UIViewController {
     @IBOutlet weak var rouletteView: UIImageView!
     @IBOutlet weak var rouletteButton: UIButton!
     @IBOutlet weak var selectList: UIButton!
+    @IBOutlet weak var SetButton: UIButton!
+    
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var label4: UILabel!
+    @IBOutlet weak var label5: UILabel!
+    @IBOutlet weak var label6: UILabel!
+    @IBOutlet weak var label7: UILabel!
+    @IBOutlet weak var label8: UILabel!
+    
     
     
     
@@ -21,7 +32,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         rouletteButton.layer.cornerRadius = 10
         selectList.layer.cornerRadius = 10
+        SetButton.layer.cornerRadius = 10
         rouletteView.layer.cornerRadius = 150
+        
+        label1.text = ""
+        label2.text = ""
+        label3.text = ""
+        label4.text = ""
+        label5.text = ""
+        label6.text = ""
+        label7.text = ""
+        label8.text = ""
+
     
     }
 
@@ -41,6 +63,29 @@ class ViewController: UIViewController {
                 handler: nil
             ))
          self.present (alert, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func onTappedSetButton(){
+        
+        label1.text = listData[0]
+        label2.text = listData[1]
+        
+        switch listData.count{
+        case 2:
+            rouletteView.image = UIImage(named: "twoItems")
+            
+        case 3:
+            rouletteView.image = UIImage(named: "threeItems")
+            label3.text = listData[2]
+        case 4:
+            rouletteView.image = UIImage(named: "fourItems")
+            label3.text = listData[2]
+            label4.text = listData[3]
+        
+        default: break
+            
+            
         }
     }
     
