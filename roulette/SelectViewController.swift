@@ -43,7 +43,7 @@ class SelectViewController: UIViewController {
     
     @IBAction func onTapped1Button(){
         toRouletteDisplay()
-        listedData.append(contentsOf: ["カレー","シチュー","うどん","ラーメン"] )
+        listedData.append(contentsOf: ["カレー","シチュー","うどん","ラーメン","シチュー","うどん","ラーメン"] )
         listData = listedData
     }
 

@@ -7,10 +7,8 @@
 //
 
 import UIKit
-
+    var makelistData: [String] = []
 class ListViewController: UIViewController {
-    
-    var makelistData: [String?] = [""]
 
     @IBOutlet weak var listfield1: UITextField!
     @IBOutlet weak var listfield2: UITextField!
@@ -22,8 +20,10 @@ class ListViewController: UIViewController {
     @IBOutlet weak var listfield8: UITextField!
     @IBOutlet weak var toRouletteButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        makelistData = []
     
     }
     
@@ -84,16 +84,38 @@ class ListViewController: UIViewController {
             alertForList()
         }
         
-        listData[0] = listfield1.text!
-        makelistData[1]?.append(listfield2.text!)
-        makelistData[2]?.append(listfield3.text!)
-        makelistData[3]?.append(listfield4.text!)
-        makelistData[4]?.append(listfield5.text!)
-        makelistData[5]?.append(listfield6.text!)
-        makelistData[6]?.append(listfield7.text!)
-        makelistData[7]?.append(listfield8.text!)
-       
+        
+        
+        if listfield2.text! != "" && listfield3.text! == ""{
+            makelistData.append(contentsOf:[listfield1.text!,listfield2.text!])
+        }
+        
+        if listfield3.text! != "" && listfield4.text! == ""{
+            makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!])
+        }
+        
+        if listfield4.text! != "" && listfield5.text! == ""{
+            makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!])
+        }
+        
+        if listfield5.text! != "" && listfield6.text! == ""{
+            makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!,listfield5.text!])
+        }
+        
+        if listfield6.text! != "" && listfield7.text! == ""{
+            makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!,listfield5.text!,listfield6.text!])
+        }
+        
+        if listfield7.text! != "" && listfield8.text! == ""{
+            makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!,listfield5.text!,listfield6.text!,listfield7.text!])
+        }
+        
+        if listfield8.text! != ""{
+             makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!,listfield5.text!,listfield6.text!,listfield7.text!,listfield8.text!])
+        }
+        
         listData = makelistData
+        
         
     
         let preview = self.storyboard?.instantiateViewController(withIdentifier: "View1") as! ViewController
