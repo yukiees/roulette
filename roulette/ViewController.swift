@@ -113,7 +113,8 @@ class ViewController: UIViewController {
     
      func roulette() {
         
-        let number = Int.random(in: 0..<360)
+        let number = Int.random(in: 1..<360)
+        
         
         UIView.animate(withDuration: 5, animations: {
             for _ in 0...7{
@@ -122,7 +123,8 @@ class ViewController: UIViewController {
             self.rouletteView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*360)
         }
             self.rouletteView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*CGFloat(number))
-    })
+        })
+        
     }
     
     func Voidalert(){
@@ -143,4 +145,5 @@ class ViewController: UIViewController {
         listData = []
     }
 }
+
 

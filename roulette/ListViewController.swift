@@ -31,6 +31,7 @@ class ListViewController: UIViewController {
     
     
     func voidListAlert(){
+        reset()
         let alert = UIAlertController(
                title: "お題が無い!",
                message:"2つ以上選択肢を作ろう!",
@@ -42,6 +43,7 @@ class ListViewController: UIViewController {
                handler: nil
            ))
         self.present (alert, animated: true, completion: nil)
+        
     }
     
     
@@ -57,72 +59,72 @@ class ListViewController: UIViewController {
                handler: nil
            ))
         self.present (alert, animated: true, completion: nil)
+        reset()
+        
     }
     
     
     @IBAction func ontappedTorouletteButton(){
         if listfield1.text! == "" || listfield2.text! == "" {
             voidListAlert()
-        }
-        
-        if listfield4.text! != "" && listfield3.text! == ""{
+            reset()
+        }else if listfield4.text! != "" && listfield3.text! == ""{
+                   alertForList()
+                   reset()
+            
+        }else if listfield5.text! != "" && listfield4.text! == ""{
+                   alertForList()
+                   reset()
+        }else if listfield6.text! != "" && listfield5.text! == ""{
+                   alertForList()
+                   reset()
+        }else if listfield7.text! != "" && listfield6.text! == ""{
+                   alertForList()
+                   reset()
+        }else if listfield8.text! != "" && listfield7.text! == ""{
             alertForList()
+            reset()
+        }else{
+            if listfield2.text! != "" && listfield3.text! == "" && listfield4.text! == "" && listfield5.text! == "" && listfield6.text! == "" && listfield7.text! == "" && listfield8.text! == ""{
+                makelistData.append(contentsOf:[listfield1.text!,listfield2.text!])
+                
+                
+            }else if listfield3.text! != "" && listfield4.text! == "" && listfield5.text! == "" && listfield6.text! == "" && listfield7.text! == "" && listfield8.text! == ""{
+                makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!])
+                
+                
+            }else if listfield4.text! != "" && listfield5.text! == "" && listfield6.text! == "" && listfield7.text! == "" && listfield8.text! == ""{
+                makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!])
+                
+                
+            }else if listfield5.text! != "" && listfield6.text! == "" && listfield7.text! == "" && listfield8.text! == ""{
+                makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!,listfield5.text!])
+                
+                
+            }else if listfield6.text! != "" && listfield7.text! == "" && listfield8.text! == ""{
+                makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!,listfield5.text!,listfield6.text!])
+                
+                
+            }else if listfield7.text! != "" && listfield8.text! == ""{
+                makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!,listfield5.text!,listfield6.text!,listfield7.text!])
+                
+                
+            }else if listfield8.text! != ""{
+                 makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!,listfield5.text!,listfield6.text!,listfield7.text!,listfield8.text!])
+                
+            }
+            
+            listData = makelistData
+
+            let preview = self.storyboard?.instantiateViewController(withIdentifier: "View1") as! ViewController
+            self.present(preview, animated: true, completion: nil)
         }
-        
-        if listfield5.text! != "" && listfield4.text! == ""{
-            alertForList()
-        }
-        
-        if listfield6.text! != "" && listfield5.text! == ""{
-            alertForList()
-        }
-        
-        if listfield7.text! != "" && listfield6.text! == ""{
-            alertForList()
-        }
-        
-        if listfield8.text! != "" && listfield7.text! == ""{
-            alertForList()
-        }
-        
-        
-        
-        if listfield2.text! != "" && listfield3.text! == ""{
-            makelistData.append(contentsOf:[listfield1.text!,listfield2.text!])
-        }
-        
-        if listfield3.text! != "" && listfield4.text! == ""{
-            makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!])
-        }
-        
-        if listfield4.text! != "" && listfield5.text! == ""{
-            makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!])
-        }
-        
-        if listfield5.text! != "" && listfield6.text! == ""{
-            makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!,listfield5.text!])
-        }
-        
-        if listfield6.text! != "" && listfield7.text! == ""{
-            makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!,listfield5.text!,listfield6.text!])
-        }
-        
-        if listfield7.text! != "" && listfield8.text! == ""{
-            makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!,listfield5.text!,listfield6.text!,listfield7.text!])
-        }
-        
-        if listfield8.text! != ""{
-             makelistData.append(contentsOf:[listfield1.text!,listfield2.text!,listfield3.text!,listfield4.text!,listfield5.text!,listfield6.text!,listfield7.text!,listfield8.text!])
-        }
-        
-        listData = makelistData
-        
-        
-    
-        let preview = self.storyboard?.instantiateViewController(withIdentifier: "View1") as! ViewController
-        self.present(preview, animated: true, completion: nil)
+
     }
 
-   
+    func reset(){
+        makelistData = []
+        listData = []
+    }
 
 }
