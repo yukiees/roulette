@@ -43,7 +43,43 @@ class SelectViewController: UIViewController {
     
     @IBAction func onTapped1Button(){
         toRouletteDisplay()
-        listedData.append(contentsOf: ["カレー","シチュー","うどん","ラーメン","シチュー","うどん","ラーメン"] )
+        listedData.append(contentsOf: ["カレー","焼肉","お寿司","中華","パスタ","鍋","ラーメン"] )
+        listData = listedData
+    }
+    
+    @IBAction func onTapped2Button(){
+        toRouletteDisplay()
+        listedData.append(contentsOf: ["やる!","後でやる!","現実逃避..."] )
+        listData = listedData
+    }
+    
+    @IBAction func onTapped3Button(){
+        toRouletteDisplay()
+        listedData.append(contentsOf: ["国語","数学","理科","社会","英語"] )
+        listData = listedData
+    }
+    
+    @IBAction func onTapped4Button(){
+        toRouletteDisplay()
+        listedData.append(contentsOf: ["J-POP","邦楽","洋楽","K-POP","ジャズ","クラシック","ロック","演歌"] )
+        listData = listedData
+    }
+    
+    @IBAction func onTapped5Button(){
+        toRouletteDisplay()
+        listedData.append(contentsOf: ["デコピン","しっぺ","変顔","モノマネ","語尾を変える","10分間英語禁止","スクワット10回","早口言葉"] )
+        listData = listedData
+    }
+    
+    @IBAction func onTapped6Button(){
+        toRouletteDisplay()
+        listedData.append(contentsOf: ["全力で国歌斉唱","一発ギャグ","腹筋500回","10kmマラソン","すべらない話","ラップで自己紹介","黒歴史公表"] )
+        listData = listedData
+    }
+    
+    @IBAction func onTapped7Button(){
+        toRouletteDisplay()
+        listedData.append(contentsOf: ["読書","ジョギング","YouTube","映画観賞","ショッピング","お菓子作り","筋トレ","昼寝"] )
         listData = listedData
     }
 

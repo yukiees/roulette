@@ -21,6 +21,32 @@ class ListViewController: UIViewController {
     @IBOutlet weak var toRouletteButton: UIButton!
     
     
+    @IBAction func textclose1(_ sender: Any) {
+    }
+    
+    @IBAction func textclose2(_ sender: Any) {
+    }
+    
+    
+    @IBAction func textclose3(_ sender: Any) {
+    }
+    
+    @IBAction func textclose4(_ sender: Any) {
+    }
+    
+    @IBAction func textclose5(_ sender: Any) {
+    }
+    
+    @IBAction func textclose6(_ sender: Any) {
+    }
+    
+    @IBAction func textclose7(_ sender: Any) {
+    }
+    
+    @IBAction func textclose8(_ sender: Any) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         makelistData = []
