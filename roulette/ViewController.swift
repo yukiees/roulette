@@ -11,6 +11,8 @@ import UIKit
 var listData: [String] = []
 var listelement: String = ""
 var number = Int.random(in: 1..<360)
+var turnnumber: Int = 0
+let randomnumber = Int.random(in: 0..<10)
 
 class ViewController: UIViewController {
     @IBOutlet weak var rouletteView: UIImageView!
@@ -26,10 +28,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var label6: UILabel!
     @IBOutlet weak var label7: UILabel!
     @IBOutlet weak var label8: UILabel!
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         rouletteButton.layer.cornerRadius = 10
@@ -45,6 +44,8 @@ class ViewController: UIViewController {
         label6.text = ""
         label7.text = ""
         label8.text = ""
+        
+        rouletteButton.isEnabled = false
 
     
     }
@@ -109,11 +110,35 @@ class ViewController: UIViewController {
         }else{
             Voidalert()
         }
+        rouletteButton.isEnabled = true
     }
     
-
+    func turn(){
+        
+        switch listData.count{
+        case 2:
+            turnnumber = 180
+        case 3:
+            turnnumber = 120
+        case 4:
+            turnnumber = 90
+        case 5:
+            turnnumber = 72
+        case 6:
+            turnnumber = 60
+        case 7:
+            turnnumber = 52
+        case 8:
+            turnnumber = 45
+        
+        default: break
+            
+            
+        }
+    }
     
      func roulette() {
+        turn()
         
         UIView.animate(withDuration: 5, animations: {
             for _ in 0...7{
@@ -123,12 +148,16 @@ class ViewController: UIViewController {
         }
             self.rouletteView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*CGFloat(number))
         })
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.3){
+                UIView.animate(withDuration: 1, animations: {
+                    if (randomnumber == 0){
+                        self.rouletteView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/180*CGFloat(number-turnnumber))
+                    }
+                })
+            }
         
         rouletteButton.isEnabled = false
-        
-        
-            
-        
+
     }
     
 
@@ -156,122 +185,243 @@ class ViewController: UIViewController {
     }
     
     func resultfunc(){
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.3){
-            self.numberlist()
-            let result = UIAlertController(
-                   title: "結果",
-                   message:"\(listelement)",
-                   preferredStyle: .alert
-               )
-               result.addAction(UIAlertAction(
-                   title: "OK",
-                   style: .default,
-                   handler: nil
-               ))
-            self.present (result, animated: true, completion: nil)
-        
+        if (randomnumber != 0){
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.3){
+                self.numberlist()
+                let result = UIAlertController(
+                       title: "結果",
+                       message:"\(listelement)",
+                       preferredStyle: .alert
+                   )
+                   result.addAction(UIAlertAction(
+                       title: "OK",
+                       style: .default,
+                       handler: nil
+                   ))
+                self.present (result, animated: true, completion: nil)
+            
+            }
+        }else{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 6.3){
+                self.numberlist()
+                let result = UIAlertController(
+                       title: "結果",
+                       message:"\(listelement)",
+                       preferredStyle: .alert
+                   )
+                   result.addAction(UIAlertAction(
+                       title: "OK",
+                       style: .default,
+                       handler: nil
+                   ))
+                self.present (result, animated: true, completion: nil)
+            
+            }
         }
+        
     }
     
     func numberlist(){
-        switch listData.count{
-        case 2:
-            if (number >= 0 && number < 181){
-                listelement = listData[1]
-            }else{
-                listelement = listData[0]
+        if (randomnumber != 0){
+            switch listData.count{
+            case 2:
+                if (number >= 0 && number < 181){
+                    listelement = listData[1]
+                }else{
+                    listelement = listData[0]
+                }
+                
+            case 3:
+                if (number >= 0 && number < 121){
+                    listelement = listData[2]
+                }else if (number >= 121 && number < 241){
+                    listelement = listData[1]
+                }else{
+                    listelement = listData[0]
+                }
+                
+            case 4:
+                if (number >= 0 && number < 91){
+                    listelement = listData[3]
+                }else if (number >= 91 && number < 181){
+                    listelement = listData[2]
+                }else if (number >= 181 && number < 271){
+                    listelement = listData[1]
+                }else{
+                    listelement = listData[0]
+                }
+                
+            case 5:
+                if (number >= 0 && number < 73){
+                    listelement = listData[4]
+                }else if (number >= 73 && number < 145){
+                    listelement = listData[3]
+                }else if (number >= 145 && number < 217){
+                    listelement = listData[2]
+                }else if (number >= 217 && number < 289){
+                    listelement = listData[1]
+                }else{
+                    listelement = listData[0]
+                }
+                
+            case 6:
+                if (number >= 0 && number < 61){
+                    listelement = listData[5]
+                }else if (number >= 61 && number < 121){
+                    listelement = listData[4]
+                }else if (number >= 121 && number < 181){
+                    listelement = listData[3]
+                }else if (number >= 181 && number < 241){
+                    listelement = listData[2]
+                }else if (number >= 241 && number < 301){
+                    listelement = listData[1]
+                }else{
+                    listelement = listData[0]
+                }
+                
+            case 7:
+                if (number >= 0 && number < 52){
+                    listelement = listData[6]
+                }else if (number >= 52 && number < 103){
+                    listelement = listData[5]
+                }else if (number >= 103 && number < 155){
+                    listelement = listData[4]
+                }else if (number >= 155 && number < 206){
+                    listelement = listData[3]
+                }else if (number >= 206 && number < 258){
+                    listelement = listData[2]
+                }else if (number >= 258 && number < 309){
+                    listelement = listData[1]
+                }else{
+                    listelement = listData[0]
+                }
+                
+            case 8:
+                if (number >= 0 && number < 46){
+                    listelement = listData[7]
+                }else if (number >= 46 && number < 91){
+                    listelement = listData[6]
+                }else if (number >= 91 && number < 136){
+                    listelement = listData[5]
+                }else if (number >= 136 && number < 181){
+                    listelement = listData[4]
+                }else if (number >= 181 && number < 226){
+                    listelement = listData[3]
+                }else if (number >= 226 && number < 271){
+                    listelement = listData[2]
+                }else if (number >= 271 && number < 316){
+                    listelement = listData[1]
+                }else{
+                    listelement = listData[0]
+                }
+                
+            
+            default: break
+                
+                
             }
             
-        case 3:
-            if (number >= 0 && number < 121){
-                listelement = listData[2]
-            }else if (number >= 121 && number < 241){
-                listelement = listData[1]
-            }else{
-                listelement = listData[0]
+        }else{
+            switch listData.count{
+            case 2:
+                if (number >= 0 && number < 181){
+                    listelement = listData[0]
+                }else{
+                    listelement = listData[1]
+                }
+                
+            case 3:
+                if (number >= 0 && number < 121){
+                    listelement = listData[0]
+                }else if (number >= 121 && number < 241){
+                    listelement = listData[2]
+                }else{
+                    listelement = listData[1]
+                }
+                
+            case 4:
+                if (number >= 0 && number < 91){
+                    listelement = listData[0]
+                }else if (number >= 91 && number < 181){
+                    listelement = listData[3]
+                }else if (number >= 181 && number < 271){
+                    listelement = listData[2]
+                }else{
+                    listelement = listData[1]
+                }
+                
+            case 5:
+                if (number >= 0 && number < 73){
+                    listelement = listData[0]
+                }else if (number >= 73 && number < 145){
+                    listelement = listData[4]
+                }else if (number >= 145 && number < 217){
+                    listelement = listData[3]
+                }else if (number >= 217 && number < 289){
+                    listelement = listData[2]
+                }else{
+                    listelement = listData[1]
+                }
+                
+            case 6:
+                if (number >= 0 && number < 61){
+                    listelement = listData[0]
+                }else if (number >= 61 && number < 121){
+                    listelement = listData[5]
+                }else if (number >= 121 && number < 181){
+                    listelement = listData[4]
+                }else if (number >= 181 && number < 241){
+                    listelement = listData[3]
+                }else if (number >= 241 && number < 301){
+                    listelement = listData[2]
+                }else{
+                    listelement = listData[1]
+                }
+                
+            case 7:
+                if (number >= 0 && number < 52){
+                    listelement = listData[0]
+                }else if (number >= 52 && number < 103){
+                    listelement = listData[6]
+                }else if (number >= 103 && number < 155){
+                    listelement = listData[5]
+                }else if (number >= 155 && number < 206){
+                    listelement = listData[4]
+                }else if (number >= 206 && number < 258){
+                    listelement = listData[3]
+                }else if (number >= 258 && number < 309){
+                    listelement = listData[2]
+                }else{
+                    listelement = listData[1]
+                }
+                
+            case 8:
+                if (number >= 0 && number < 46){
+                    listelement = listData[0]
+                }else if (number >= 46 && number < 91){
+                    listelement = listData[7]
+                }else if (number >= 91 && number < 136){
+                    listelement = listData[6]
+                }else if (number >= 136 && number < 181){
+                    listelement = listData[5]
+                }else if (number >= 181 && number < 226){
+                    listelement = listData[4]
+                }else if (number >= 226 && number < 271){
+                    listelement = listData[3]
+                }else if (number >= 271 && number < 316){
+                    listelement = listData[2]
+                }else{
+                    listelement = listData[1]
+                }
+                
+            
+            default: break
+                
+                
             }
-            
-        case 4:
-            if (number >= 0 && number < 91){
-                listelement = listData[3]
-            }else if (number >= 91 && number < 181){
-                listelement = listData[2]
-            }else if (number >= 181 && number < 271){
-                listelement = listData[1]
-            }else{
-                listelement = listData[0]
-            }
-            
-        case 5:
-            if (number >= 0 && number < 73){
-                listelement = listData[4]
-            }else if (number >= 73 && number < 145){
-                listelement = listData[3]
-            }else if (number >= 145 && number < 217){
-                listelement = listData[2]
-            }else if (number >= 217 && number < 289){
-                listelement = listData[1]
-            }else{
-                listelement = listData[0]
-            }
-            
-        case 6:
-            if (number >= 0 && number < 61){
-                listelement = listData[5]
-            }else if (number >= 61 && number < 121){
-                listelement = listData[4]
-            }else if (number >= 121 && number < 181){
-                listelement = listData[3]
-            }else if (number >= 181 && number < 241){
-                listelement = listData[2]
-            }else if (number >= 241 && number < 301){
-                listelement = listData[1]
-            }else{
-                listelement = listData[0]
-            }
-            
-        case 7:
-            if (number >= 0 && number < 52){
-                listelement = listData[6]
-            }else if (number >= 52 && number < 103){
-                listelement = listData[5]
-            }else if (number >= 103 && number < 155){
-                listelement = listData[4]
-            }else if (number >= 155 && number < 206){
-                listelement = listData[3]
-            }else if (number >= 206 && number < 258){
-                listelement = listData[2]
-            }else if (number >= 258 && number < 309){
-                listelement = listData[1]
-            }else{
-                listelement = listData[0]
-            }
-            
-        case 8:
-            if (number >= 0 && number < 46){
-                listelement = listData[7]
-            }else if (number >= 46 && number < 91){
-                listelement = listData[6]
-            }else if (number >= 91 && number < 136){
-                listelement = listData[5]
-            }else if (number >= 136 && number < 181){
-                listelement = listData[4]
-            }else if (number >= 181 && number < 226){
-                listelement = listData[3]
-            }else if (number >= 226 && number < 271){
-                listelement = listData[2]
-            }else if (number >= 271 && number < 316){
-                listelement = listData[1]
-            }else{
-                listelement = listData[0]
-            }
-            
-        
-        default: break
-            
-            
         }
+        
     
-}
+    }
 
 }
