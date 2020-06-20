@@ -12,7 +12,7 @@ var listData: [String] = []
 var listelement: String = ""
 var number = Int.random(in: 1..<360)
 var turnnumber: Int = 0
-let randomnumber = Int.random(in: 0..<10)
+var randomnumber = Int.random(in: 0..<10)
 
 class ViewController: UIViewController {
     @IBOutlet weak var rouletteView: UIImageView!
